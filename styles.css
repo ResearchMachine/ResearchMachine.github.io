@@ -1,0 +1,29 @@
+/* Стили для раскрывающегося блока */
+
+.accordion {
+    max-width: 400px; /* Максимальная ширина блока */
+    margin: 0 auto; /* Центрирование на странице */
+}
+
+.accordion-item {
+    margin-bottom: 10px; /* Расстояние между блоками */
+    border: 1px solid #ddd; /* Граница блока */
+    border-radius: 4px; /* Скругление углов */
+}
+
+.accordion-header {
+    background-color: #f0f0f0; /* Цвет фона заголовка */
+    padding: 10px; /* Внутренний отступ заголовка */
+    cursor: pointer; /* Курсор указывает на то, что заголовок кликабельный */
+}
+
+.accordion-content {
+    display: none; /* Скрываем содержимое по умолчанию */
+    padding: 10px; /* Внутренний отступ содержимого */
+}
+
+/* Стили для раскрывания содержимого при клике */
+
+.accordion-item.active .accordion-content {
+    display: block; /* Отображаем содержимое при активном состоянии */
+}
