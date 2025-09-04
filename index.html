@@ -63,6 +63,56 @@ body.dark-mode a {
 <li><b>Languages:</b> English fluent, Russian native. </li>
 </ul>
 
+
+<style>
+    .company-container {
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+        font-weight: bold;
+        font-size: 16px;
+        color: #003366;
+    }
+
+    /* Скрытый блок описания */
+    .company-tooltip {
+        visibility: hidden;
+        opacity: 0;
+        width: 320px;
+        background-color: #fff;
+        color: #333;
+        text-align: left;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        padding: 10px;
+        position: absolute;
+        z-index: 1;
+        left: 0;
+        top: 120%;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+        transition: opacity 0.3s ease, transform 0.3s ease;
+        transform: translateY(-5px);
+        font-size: 14px;
+        line-height: 1.4em;
+    }
+
+    /* Показываем описание при наведении */
+    .company-container:hover .company-tooltip {
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(0);
+    }
+</style>
+
+<div class="company-container">
+    Gazprom Neft Oil Company
+    <div class="company-tooltip">
+        <b>About Company:</b> The Technology Partnerships LLC (Bazhen Technology Centre) department, based in Moscow, specializes in shale oil production modeling.<br>
+        See also: <a href="https://en.wikipedia.org/wiki/Gazprom_Neft" target="_blank">Gazpromneft Wiki Page</a>.
+    </div>
+</div>
+	
+
 <h3>📈 Experience</h3>
 	
 <ul>
