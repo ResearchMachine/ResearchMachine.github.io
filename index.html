@@ -113,39 +113,96 @@ body.dark-mode a {
 </div>
 	
 
+<style>
+    /* Контейнер для названия компании */
+    .company-hover {
+        position: relative;
+        display: inline-block;
+        cursor: pointer;
+    }
+
+    /* Скрытый блок описания */
+    .company-tooltip {
+        visibility: hidden;
+        opacity: 0;
+        width: 360px;
+        background-color: #fff;
+        color: #333;
+        text-align: left;
+        border: 1px solid #ccc;
+        border-radius: 6px;
+        padding: 10px;
+        position: absolute;
+        z-index: 10;
+        left: 0;
+        top: 120%;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+        transition: opacity 0.3s ease, transform 0.3s ease;
+        transform: translateY(-5px);
+        font-size: 14px;
+        line-height: 1.4em;
+    }
+
+    /* Плавное появление подсказки */
+    .company-hover:hover .company-tooltip {
+        visibility: visible;
+        opacity: 1;
+        transform: translateY(0);
+    }
+</style>
+
+
+
+
+	
 <h3>📈 Experience</h3>
 	
 <ul>
-<li><b>Freelance – <i>Mathematician / Data Scientist</i></b>
-<br> <i>2015 – now</i>
-<br> Tutoring & account management, Data Mining projects, consultation.
-</li><br>	
-<li><b>Gazprom Neft Oil Company | Remote – <i>Applied Mathematician / Data Scientist</i></b>
-<br> <i>03/2020 – 09/2020, 08/2021 – 01/2022, 08/2022 – 01/2023 (1.5 years total)</i>
-<br> Worked on 3 projects focused on analysis and development of predictive modeling modules for oil production.		
-<br> <b>Key Responsibilities</b>: 
-<br> • Research on predictive modeling techniques in oil productions. 
-<br> • Implemented data mining and modeling solutions using Python 3 and VBA.
-<br> • Development of technical requirement and documentation.
-<br> <b>Publications</b>: [<a href=https://doi.org/10.24887/0028-2448-2021-9-76-81>1</a>].
- <br> <small>
-<b>About Company:</b> The Technology Partnerships LLC (Bazhen Technology Centre) department, based in Moscow, specializes in shale oil production modeling. <a href=https://www.rogtecmagazine.com/gazprom-neft-and-snf-to-develop-eor-technologies/>About Department</a>, 
-<a href=https://en.wikipedia.org/wiki/Gazprom_Neft>Gazpromneft Wiki Page</a>.
-</small>
-</li><br>
-<li> <b>GAMMETT Research Laboratory, USATU | Hybrid – <i>Research Engineer</i></b>	
-<br><i>03/2017 – 11/2020 (3 years 8 months)</i>
-<br> Engaged in validating academic mathematical models for industrial applications, including prototype development and problem detection in oil production modeling.
-<br> <b>Key Responsibilities</b>: 
-<br> • Research on modeling techniques to account for new phenomena in oil production.
-<br> • Prototyped modern modeling solutions using Maple and Python 3.
-<br> • Published academic papers in mathematical modeling and prepared detailed research reports.
-<br> <b>Publications</b>: [<a href=https://doi.org/10.24887/0028-2448-2020-1-46-49>2</a>, <a href=https://ui.adsabs.harvard.edu/abs/2020AIPC.2293P0071A/abstract>3</a>,  etc.].
-<br> <small>
-<b>About Company:</b> 
- The research lab GAMMETT, based at Ufa State Aviation Technical University (Russia) collaborated with the research institute <a href=https://rn.digital/en/>RN-BashNIPIneft</a> on oil production modeling research. <a href=http://gammett.ugatu.su/index.php?option=com_content&view=article&id=622&Itemid=128/>Website</a>.  
-<!--#<a href=https://megagrant.ru/media/photos/photo_211351/#album-gallery-4>2</a>--> 
-</small>
+<!-- Gazprom Neft -->
+<li>
+    <b>
+        <span class="company-hover">
+            Gazprom Neft Oil Company
+            <div class="company-tooltip">
+                <b>About Company:</b> The Technology Partnerships LLC (Bazhen Technology Centre) department, based in Moscow, specializes in shale oil production modeling.
+                <br><a href="https://www.rogtecmagazine.com/gazprom-neft-and-snf-to-develop-eor-technologies/" target="_blank">About Department</a>,
+                <a href="https://en.wikipedia.org/wiki/Gazprom_Neft" target="_blank">Gazpromneft Wiki Page</a>.
+            </div>
+        </span>
+        | Remote – <i>Applied Mathematician / Data Scientist</i>
+    </b>
+    <br>
+    <i>03/2020 – 09/2020, 08/2021 – 01/2022, 08/2022 – 01/2023 (1.5 years total)</i>
+    <br> Worked on 3 projects focused on analysis and development of predictive modeling modules for oil production.
+    <br> <b>Key Responsibilities</b>:
+    <br> • Research on predictive modeling techniques in oil productions.
+    <br> • Implemented data mining and modeling solutions using Python 3 and VBA.
+    <br> • Development of technical requirement and documentation.
+    <br> <b>Publications</b>: [<a href="https://doi.org/10.24887/0028-2448-2021-9-76-81">1</a>].
+</li>
+<br>
+
+<!-- GAMMETT Research Lab -->
+<li>
+    <b>
+        <span class="company-hover">
+            GAMMETT Research Laboratory, USATU
+            <div class="company-tooltip">
+                <b>About Company:</b> The research lab GAMMETT, based at Ufa State Aviation Technical University (Russia), collaborated with the research institute 
+                <a href="https://rn.digital/en/" target="_blank">RN-BashNIPIneft</a> on oil production modeling research.
+                <br><a href="http://gammett.ugatu.su/index.php?option=com_content&view=article&id=622&Itemid=128/" target="_blank">Website</a>.
+            </div>
+        </span>
+        | Hybrid – <i>Research Engineer</i>
+    </b>
+    <br>
+    <i>03/2017 – 11/2020 (3 years 8 months)</i>
+    <br> Engaged in validating academic mathematical models for industrial applications, including prototype development and problem detection in oil production modeling.
+    <br> <b>Key Responsibilities</b>:
+    <br> • Research on modeling techniques to account for new phenomena in oil production.
+    <br> • Prototyped modern modeling solutions using Maple and Python 3.
+    <br> • Published academic papers in mathematical modeling and prepared detailed research reports.
+    <br> <b>Publications</b>: [<a href="https://doi.org/10.24887/0028-2448-2020-1-46-49">2</a>, <a href="https://ui.adsabs.harvard.edu/abs/2020AIPC.2293P0071A/abstract">3</a>, etc.].
 </li>
 </ul>	
 
