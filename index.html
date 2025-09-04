@@ -165,27 +165,38 @@ Programming Language: R.</small></small>--> </li>
 </small>    
 <br><br>
 
-<i>4. Gazprom Neft | <b>Production Drivers Analysis & Stochastic Forecasting</b> | Python 3 | 03/2020 – 09/2020 | [<a href="https://doi.org/10.24887/0028-2448-2021-9-76-81">1</a>] – Publication</i>
-<small>	
-<br> • <b>Objective</b>: Quantify key production influencers and develop probabilistic forecasting framework
-<br> • <b>Implementation</b>: Multivariate regression analysis + Monte Carlo simulation 
-<br> • <b>Outcome</b>: Identified 5 statistically significant production drivers with SHAP value interpretation
-</small>
-<br><br>
-
-	<style>
+<style>
     .collapsible {
         cursor: pointer;
-        display: inline-block;
+        display: flex;
+        align-items: center;
+        gap: 6px;
+        user-select: none;
     }
+
+    .arrow {
+        transition: transform 0.25s ease;
+        font-size: 12px;
+    }
+
     .content {
         display: none;
         margin-top: 5px;
+        margin-left: 18px; /* смещение для аккуратности */
+    }
+
+    .content.show {
+        display: block;
+    }
+
+    .rotate {
+        transform: rotate(90deg);
     }
 </style>
 
 <div>
     <i class="collapsible">
+        <span class="arrow">▶</span>
         4. Gazprom Neft | <b>Production Drivers Analysis & Stochastic Forecasting</b> | Python 3 | 03/2020 – 09/2020 | 
         [<a href="https://doi.org/10.24887/0028-2448-2021-9-76-81" target="_blank">1</a>] – Publication
     </i>
@@ -200,10 +211,13 @@ Programming Language: R.</small></small>--> </li>
     document.querySelectorAll('.collapsible').forEach(function(item) {
         item.addEventListener('click', function() {
             const content = this.nextElementSibling;
-            content.style.display = content.style.display === 'block' ? 'none' : 'block';
+            const arrow = this.querySelector('.arrow');
+            content.classList.toggle('show');
+            arrow.classList.toggle('rotate');
         });
     });
 </script>
+
 
  
 	
