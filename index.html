@@ -244,16 +244,23 @@ Programming Language: R.</small></small>
 <h3>💼 Projects</h3>
 
 <style>
-.collapsible {
+
+
+	.collapsible {
     cursor: pointer;
     display: flex;
     align-items: center;
-    justify-content: flex-start; /* ⬅️ выравниваем весь контент влево */
     gap: 6px;
     user-select: none;
     margin-bottom: 4px;
-    text-align: left; /* ⬅️ для надежности */
 }
+
+.collapsible.title {
+    flex: 1;             /* заставляем текст занимать всю ширину */
+    text-align: left;     /* текст строго влево */
+    white-space: normal;  /* переносим длинные строки */
+}
+
 
     .arrow {
         transition: transform 0.25s ease;
@@ -350,7 +357,9 @@ Programming Language: R.</small></small>
 <!-- 7 -->
 <i class="collapsible">
     <span class="arrow">▶</span>
+	<span class="title">
     7. Research lab. GAMMETT | <b>Fractal Derivatives in Oil Production Modeling: Monte Carlo algorithm prototyping, Differential Equations.</b> | Maple / Python 3 | 2018 | [<a href="https://www.elibrary.ru/ytsxtn">5</a>, <a href="https://www.elibrary.ru/vkekou">6</a>] – Publications
+	</span>
 </i>
 <small class="content">
     • <b>Objective</b>: Develop and compare new modeling approach (fractal derivative) for physical model with differential equations (oil production)
